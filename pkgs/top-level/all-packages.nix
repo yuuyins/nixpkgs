@@ -22792,6 +22792,8 @@ with pkgs;
   open-vm-tools = callPackage ../applications/virtualization/open-vm-tools { };
   open-vm-tools-headless = open-vm-tools.override { withX = false; };
 
+  ops = callPackage ../applications/virtualization/ops { };
+
   air = callPackage ../development/tools/air { };
 
   delve = callPackage ../development/tools/delve { };
